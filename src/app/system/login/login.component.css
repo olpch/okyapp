@@ -1,0 +1,32 @@
+.oklogo {
+  padding: 4px;
+  border-radius: 20px;
+  background-color: white;
+  width: 80%;
+  padding: 15px;
+  border: 2px solid #d41971;
+}
+.oclass {
+  position:relative;
+  border-top: 1px solid rgba(0,0,0,0.2);
+  width: 100%;
+  margin: 10px 15px 0 15px;
+  height: 20px;
+}
+.oclass span {
+  position: absolute;
+  top: -12px;
+  background-color: white;
+  padding: 0 10px;
+  left: calc(50% - 86px);
+}
+.social {
+display: flex;
+justify-content: space-around;
+margin: 0 auto;
+/*max-width: 250px;*/
+}
+.btn-twiter {
+  background-color:#1DA1F2;
+  color:#fff
+}

@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-body">
+          <select name="" id="" class="pull-right">
+            <option value="1">aaa</option>
+          </select>
+          <h3 class="card-title">Facturas</h3>
+          <table class="table stylish-table">
+            <thead>
+              <th>Fecha</th>
+              <th>Hora</th>
+              <th>Número</th>
+              <th>Cliente</th>
+              <th>Articulos</th>
+              <th class="text-rigth">Total</th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let invoice of invoices">
+                <td>{{invoice.created_at | date:'MMM dd':'es_US'}}</td>
+                <td>{{invoice.created_at | date:'shortTime'}}</td>
+                <td>00001</td>
+                <td>{{invoice.client.name}}</td>
+                <td>{{invoice.articles}}</td>
+                <td>{{invoice.total | currency:'COP':'symbol'}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+  </div>
+</div>
