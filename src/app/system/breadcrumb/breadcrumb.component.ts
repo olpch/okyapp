@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-breadcrumb',
+  selector: '.row.page-titles',
   templateUrl: './breadcrumb.component.html',
-  styles: [':host {display:block}']
+  styles: []
 })
 export class BreadcrumbComponent implements OnInit {
 

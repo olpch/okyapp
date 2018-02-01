@@ -13,3 +13,10 @@
   border-right: 2px solid #de2c82;
   border-bottom: 2px solid #de2c82;
 }
+
+.truncated {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

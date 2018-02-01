@@ -14,15 +14,16 @@ export class ApplicationService {
   userState: Observable<firebase.User>;
   owner:string = 'Omar Lee Paba ching';
 
+  public breadcrumb:boolean = true
+
   constructor(
     public _afAuth: AngularFireAuth,
     private router: Router
     ) {
       this.userState = this._afAuth.authState;
       this._afAuth.authState.subscribe(user => {
-        console.log(user);
         if(user != null) {
-          console.info('Asignando datos al Usuario');
+          // console.info('Asignando datos al Usuario');
           this.current_user = {
             id: '',
             name: user.displayName,
@@ -30,10 +31,10 @@ export class ApplicationService {
             uid: user.uid,
             avatar: user.photoURL
           }
-          console.info('User Authenticated, redirect to Dashboard');
+          // console.info('User Authenticated, redirect to Dashboard');
           //this.router.navigate(["/inicio"]);
         } else {
-          console.warn('User not Authenticated, redirect to Login');
+          // console.warn('User not Authenticated, redirect to Login');
           this.router.navigate(["/login"]);
         }
       });

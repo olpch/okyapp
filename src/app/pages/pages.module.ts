@@ -1,4 +1,3 @@
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -28,4 +27,4 @@ import { InvoiceComponent } from './invoice/invoice.component';
     CasherComponent
   ]
 })
-export class PagesModule { }
+export class PagesModule {}
